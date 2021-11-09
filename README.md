@@ -9,7 +9,7 @@ Open up a command prompt<br><br>
 Navigate to the location of where the code will be saved<br><br>
 Enter the following:
 ```
-github clone JahsiasWhite/otreeTest
+github clone lucasreddinger/otree-public-goods
 ```
 ### Testing locally
 Install otree using:
