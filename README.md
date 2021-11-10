@@ -22,6 +22,32 @@ Enter the following:
 otree devserver
 ```
 Open your browser to the returned web address where your oTree server should be running
+
+## Creating a container using Docker
+
+### Install Docker
+First, create an account on [docker hub](https://hub.docker.com/)
+
+Next, make sure you have Docker installed - if not, they can be found below
+[Windows](https://docs.docker.com/desktop/windows/install/)
+[Mac](https://docs.docker.com/desktop/mac/install/)
+[Linux](https://docs.docker.com/engine/install/ubuntu/)
+
+### Setup Dockerfile
+The docker file should already be included. If there is no docker file, repull this repo.
+
+### Creating the image
+While in the oTree project folder, enter the following on the command line
+```
+docker build -t yourusername/otreeTest .
+```
+Where yourusername is the username you used when creating an account on docker hub
+
+You've now successfully created a docker image! You can test to see if it worked by entering:
+```
+docker images
+```
+ 
 ## Running on Heroku
 For a detailed guide with additional help, [click here](
 https://github.com/oTree-org/otree-docs/blob/143a6ab7b61d54ec2be1a8bc09515d78e0b07c71/source/server/heroku.rst#heroku-setup-option-2)
