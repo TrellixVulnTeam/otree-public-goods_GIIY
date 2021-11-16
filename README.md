@@ -115,3 +115,23 @@ Open the site in your browser:
 
 
     heroku open
+
+
+
+
+
+------------------------------------------------------------------
+
+## How to build a docker image from github on AWS EC2
+
+```
+sudo yum update -y
+sudo yum install docker git
+sudo service docker start
+sudo docker info
+git clone https://github.com/lucasreddinger/otree-public-goods.git
+cd otree-public-goods
+sudo docker build -t otree-test .
+sudo docker run -t -i -p 8000:80 otree-test
+```
+
